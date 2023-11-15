@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <!-- head contains document title, link reference, meta data setting, this elements does not show on the website. -->
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+
+        <!-- document title -->
+        <title>Title of the webpage</title>
+
+        <!-- get javascript -->
+        <script src="main.js"></script>
+
+        <!-- get css -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <!-- contains all the elements that shows on the website-->
+    <body>
+
+        <h1>
+            hello world
+        </h1>
+
+        <p style="font-weight: bold;">
+            hello world 
+        </p>
+
+        <b>bold text</b>
+
+        <!-- reference link-->
+        <!-- can refernece {id #, website URL, locol file}-->
+        <a href="http://www.google.com"> google.com </a>
+
+        <h2 id="top">Top of page</h2>
+        <a href="#top">Go to top</a>
+        
+        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"> google.com in new tab</a>
+
+
+        <!-- input types; {button, checkbox, color, data, datatime, email, file, image, number, range, search, time}-->
+        <!-- input name; name of this input, can refernce it later-->
+        <!-- input value; pre-assigned value on the input -->
+        <input type ="text" name="" value="">
+
+        <!-- buttons -->
+        <button type="button" onclick="alert('Hello World!')"> Click Me! </button>
+
+        <!-- select , option , optgroup -->
+        <select name = "car1">
+            <option value="Ferrari"> Ferrari </option>
+            <option value="Lamborgini"> Lamborgini </option>
+        </select>
+
+        <select name="car2">
+            <optgroup label="German cars">
+                <option value="BMW"> BMW </option>
+                <option value="Audi"> Audi </option>
+            </optgroup>
+        </select>
+
+        <select name="car3">
+            <optgroup label="Korean cars" disabled>
+                <option value="Hyndai"> Hyndai </option>
+                <option value="KIA"> KIA </option>
+            </optgroup>
+
+        </select>
+
+        <!-- text area -->
+        <textarea name="text" rows="10" cols="30">
+            write your message
+        </textarea>
+
+        <!-- form -->
+        <form action="http://jsonplaceholder.typicode.com/users" method="get">
+            ID: <input type="text" name="id" value="1"><br>
+            username: <input type="text" name="username" value="Bret"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+
+</html>
