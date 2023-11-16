@@ -13,30 +13,28 @@
         <script src="main.js"></script>
 
         <!-- get css -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="cssbasics.css">
     </head>
 
     <!-- contains all the elements that shows on the website-->
     <body>
 
-        <h1>
-            hello world
-        </h1>
-
-        <p style="font-weight: bold;">
-            hello world 
-        </p>
-
-        <b>bold text</b>
+        <h1>hello world</h1>
+        <p style="font-weight: bold;"> hello world </p>
+        <b id="t1">bold text</b>
+        <i>italic <br> next line</i>
 
         <!-- reference link-->
         <!-- can refernece {id #, website URL, locol file}-->
-        <a href="http://www.google.com"> google.com </a>
+        <div class="box1">
+            <a href="http://www.google.com"> google.com </a>
 
-        <h2 id="top">Top of page</h2>
-        <a href="#top">Go to top</a>
+            <h2 id="top">Top of page</h2>
+            <a href="#top">Go to top</a>
         
-        <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"> google.com in new tab</a>
+            <a href="http://www.google.com" target="_blank" rel="noopener noreferrer"> google.com in new tab</a>
+        </div>
+        
 
 
         <!-- input types; {button, checkbox, color, data, datatime, email, file, image, number, range, search, time}-->
@@ -44,8 +42,8 @@
         <!-- input value; pre-assigned value on the input -->
         <input type ="text" name="" value="">
 
-        <!-- buttons -->
-        <button type="button" onclick="alert('Hello World!')"> Click Me! </button>
+        <!-- buttons ; can use image-->
+        <button type="button" value="Click me!" onclick="alert('Hello World!')"> Click Me! </button>
 
         <!-- select , option , optgroup -->
         <select name = "car1">
@@ -68,6 +66,24 @@
 
         </select>
 
+        <!-- ordered & unordered list-->
+        <!-- types; {1,A,a,I,i}-->
+        <ol type = "a">
+            <li value="b"> start with b</li>
+            <li> next order is c</li>
+        </ol>
+
+        <ul>
+            <li> unordered 1</li>
+            <li> unordered 2</li>
+        </ul>
+
+        <!-- images ; attributes {src, alt, width, height} -->
+        <img src="" alt="" width="">
+
+        <!-- audio ; attributes {src, preload, autoplay, loop, controls}-->
+        <audio src="" controls>   </audio>
+
         <!-- text area -->
         <textarea name="text" rows="10" cols="30">
             write your message
@@ -82,3 +98,4 @@
     </body>
 
 </html>
+

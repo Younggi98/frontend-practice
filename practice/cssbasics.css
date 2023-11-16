@@ -1,0 +1,40 @@
+/*
+- change properties of basic elements in HTML
+- Link css style to HTML
+- Reset css : Eric Meyer's reset or normalize.css
+
+*/
+
+
+h1 {color:red; font-size: 40px;}
+p {color: green; font-size: 15px; background: aqua;}
+
+/*  ID selector */
+#t1 {color: yellow;}
+
+/*  Class selector */
+.box1 {color: orange;}
+
+/*  Attribute selector {href {^= starting, $= ending, *= contain}, target, title, lang}*/
+a[href] {color: red;}
+
+/*  pseudo-class selector */
+
+/* input of type=text is focused */
+input[type=text]:focus {background-color: green;}
+input:not([type=text]) {background: lightblue;}
+
+/* a when not visted yet */
+a:link { color: orange; }
+
+/* a when visited */
+a:visited { color: green; }
+
+/* a when hovered */
+a:hover { background-color: grey; font-weight: bold; }
+
+/* a when clicked */
+a:active { color: blue; }
+
+
+
